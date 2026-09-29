@@ -31,7 +31,7 @@
 
 ## 本地证据索引
 
-以下原项目相对路径已读取，本次不上传源码或比赛包：
+以下原项目相对路径已读取；2026-09-30新增[完整项目档案](kaggriculture/README.md)与[单文件Agent源码](kaggriculture/CODE.md)，完整比赛包仍保留在原项目：
 
 - `work/RESEARCH_LOG.md`
 - `work/tournament_matrix.py`

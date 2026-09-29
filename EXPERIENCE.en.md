@@ -41,7 +41,7 @@ Evidence reviewed on 30 September 2026. These entries describe separate projects
 
 - Iterated multi-asset strategy variants and documented their hypotheses, parameters and evaluation windows.
 - Aligned local replay with the evaluator’s scoring conventions and separated public model-selection results from hidden-data claims.
-- Maintained packaging and release checks and published a private research-notes repository.
+- Maintained packaging and release checks; organized research notes and subsequently published them alongside a final-candidate source snapshot.
 
 **Scope:** Research and local replay; no claim of live trading profitability or verified hidden-test performance.  
 [Case study](projects/algothon.md)

@@ -17,20 +17,26 @@
 
 ## 原仓库快照
 
-| 仓库 | 核实时可见性 | 固定提交 |
+| 仓库 | 2026-09-30更新后的可见性 | 研究源码固定提交 |
 |---|---|---|
-| [llm-eval-lab](https://github.com/TsingZYY/llm-eval-lab) | 私有 | `9bc889478c80e10dc6a38e2d4fbc75b0c48a20d4` |
-| [atlassian-support-review-experiments](https://github.com/TsingZYY/atlassian-support-review-experiments) | 私有 | `c6ece712402e7cba83cd2529cc7073deba8fb0d7` |
-| [algothon-2026-research-notes](https://github.com/TsingZYY/algothon-2026-research-notes) | 私有 | `2401845e6a5b6e6307cb82e6f52d16799c6ee218` |
-| [rlvr-verifier-error-transfer-evidence](https://github.com/TsingZYY/rlvr-verifier-error-transfer-evidence) | 私有 | `dbb820ce53f6360a764eabdd829b98c9f392f866` |
+| [llm-eval-lab](https://github.com/TsingZYY/llm-eval-lab) | 公开 | `9bc889478c80e10dc6a38e2d4fbc75b0c48a20d4` |
+| [atlassian-support-review-experiments](https://github.com/TsingZYY/atlassian-support-review-experiments) | 公开 | `c6ece712402e7cba83cd2529cc7073deba8fb0d7` |
+| [algothon-2026-research-notes](https://github.com/TsingZYY/algothon-2026-research-notes) | 公开 | `2401845e6a5b6e6307cb82e6f52d16799c6ee218` |
+| [rlvr-verifier-error-transfer-evidence](https://github.com/TsingZYY/rlvr-verifier-error-transfer-evidence) | 公开 | `dbb820ce53f6360a764eabdd829b98c9f392f866` |
 
-私有源码链接只对拥有权限的读者可用。整理日期不代表所有原项目都在当日更新。
+这些仓库已按用户明确授权公开，原研究提交仍用于固定证据版本。新增导航文档不会改变这些历史结果的版本。整理日期不代表所有原项目都在当日运行或更新。
+
+原历史中保留作者元数据，部分研究记录包含本地路径，Atlassian原仓库包含比赛合成CSV；公开范围已单独告知并获得确认。本次新增的三个源码快照则排除原始数据与私人路径。
+
+## 2026-09-30补充交付
+
+六个项目新增统一的时间线、笔记、代码说明和反思。Algothon最终候选、Kaggriculture单文件Agent及Titanic流水线／Notebook在本作品集中提供实际源码；另外三个项目直接链接原仓库固定提交。笔记和反思是依据原始记录的回顾性整理，不是补造的逐日实验日志。
 
 ## 本次修正的历史表述
 
 1. **LLM：** 当前工作区含未提交扩展；发布版本与本地扩展分开。当前报告为mock，历史真实模型成绩不能直接当作当前可重现结果。
 2. **Titanic：** 旧随机划分的0.849与当前家庭分组的约0.787属于不同评测协议，采用后者并注明旧文档尚未同步。
-3. **Algothon：** 公开且参与选模的分数不称隐藏样本外成绩。研究笔记已经上传，策略源码未上传。
+3. **Algothon：** 公开且参与选模的分数不称隐藏样本外成绩。最初只上传研究笔记；2026-09-30按新要求补充最终候选源码快照。
 4. **Atlassian：** 87.93%是方差解释度，不是分类准确率、升级率或收入增长；数据为比赛合成数据。
 5. **Kaggriculture：** 2,400场包括候选和控制两种策略；控制同样达到所列胜率，不能声称胜率提升。分析规则有留痕修订。
 6. **RLVR：** 单步工程canary和正式科学实验严格区分；科学实验尚未完成。

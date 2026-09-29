@@ -1,0 +1,2 @@
+# Version recorded in the historical V10-O2 runtime report.
+numpy==2.3.5

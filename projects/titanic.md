@@ -38,7 +38,7 @@
 - `outputs/submission.csv`
 - `requirements.txt`
 
-本次仅上传项目描述。未找到可核实的该项目远端源码仓库，也未确认Kaggle已提交或获得排名。
+2026-09-30已补充[完整项目档案](titanic/README.md)和[源码／Notebook](titanic/CODE.md)，发布在本作品集。没有确认Kaggle已提交或获得排名。
 
 ## 面试重点
 
