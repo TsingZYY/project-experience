@@ -1,0 +1,188 @@
+{
+  "prepared_on": "2026-09-30",
+  "source_basename": "COMP9414_Assignment2.ipynb",
+  "source_sha256": "bf52eb1d4b43bed4dee7ef5f8321a38a7794442188d128220c04c3aa35f4f9ed",
+  "source_bytes": 3285003,
+  "source_last_modified_date_recorded": "2026-07-26",
+  "source_total_cells": 78,
+  "source_code_cells": 39,
+  "transformation": "Selected top-level assignments and function/class definitions copied verbatim by source segments; imports consolidated to NumPy; all original markdown, outputs, execution counts and metadata omitted; new editorial markdown added.",
+  "excluded": [
+    "student identifier",
+    "original narrative and task text",
+    "automatic execution and train_or_load cells",
+    "plotting/render hooks",
+    "finite-difference check execution",
+    "checkpoints and binary artefacts"
+  ],
+  "logic_scope": "Retained function/class bodies are unchanged; this is a core-only derivative, not the full original notebook.",
+  "source_executed_during_preparation": false,
+  "source_cells": [
+    {
+      "source_cell_index_zero_based": 3,
+      "title": "历史实验配置",
+      "original_cell_sha256": "8763d1c18e71620dfff2008eb741a6c4e2c3ee5033d49de0efd420595854c310",
+      "retained_source_sha256": "afebd761ecee1be15878c730b7991273c55e7bce69650777dcc089a2010ed7b0",
+      "retained_names": [
+        "SEED",
+        "CFG",
+        "ITERS",
+        "EVAL34",
+        "EVAL5"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 6,
+      "title": "环境常量与轻量空间接口",
+      "original_cell_sha256": "a11614bceda24d7a9c27355500dbe3cff872b52d8ffb42c3de236707727946ab",
+      "retained_source_sha256": "6c46172ca13be10c0b920b4c5c3f19842e35179bf8023c5c9c25b6162152fb72",
+      "retained_names": [
+        "GRID_SIZE",
+        "N_AGENTS",
+        "MAX_STEPS",
+        "IDLE",
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT",
+        "ACTION_NAMES",
+        "ACTION_DELTA",
+        "N_ACTIONS",
+        "N_CHANNELS",
+        "_to0",
+        "START_POSITIONS",
+        "FRAGILE_CELLS",
+        "LARGE_DIRT_CELLS",
+        "NORMAL_DIRT_CELLS",
+        "R_NORMAL_DIRT",
+        "R_LARGE_DIRT",
+        "R_EXPLORE",
+        "R_REVISIT",
+        "R_IDLE",
+        "R_TIMESTEP",
+        "R_COLLISION",
+        "R_COMPLETE",
+        "AGENT_COLORS",
+        "MultiDiscreteSpace",
+        "BinaryArraySpace"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 7,
+      "title": "三机器人清洁环境",
+      "original_cell_sha256": "eea36da827426e00f5010ed69be9cf88a1593fcf4bad212ad5f228eb96e3b6cb",
+      "retained_source_sha256": "d312680c15e5e0d144be8b39ef02f60af65e578ba04ea9c49576f13c019bd86d",
+      "retained_names": [
+        "MultiAgentCleaningEnv"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 18,
+      "title": "NumPy 神经网络与 Adam",
+      "original_cell_sha256": "ae67726c8468b2ffb49cc75304fbabf5f53d314111acad6a3d0c178e371e2b67",
+      "retained_source_sha256": "11a790c1df70422bb75993de9508b8b3ef9eea3c766cebbec2a39951cc423a4a",
+      "retained_names": [
+        "orthogonal",
+        "Linear",
+        "Tanh",
+        "MLP",
+        "Adam"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 19,
+      "title": "策略、价值函数、GAE 与 PPO 梯度",
+      "original_cell_sha256": "3f2e7dd544ff4ba2dbf0343a66c27ad6c198364dc85991412b2b21ad5a60ff6a",
+      "retained_source_sha256": "7cee032fc3ea051fa19b508fa9e22dca4f69231f1510a4edf43ad7f71ee2a11d",
+      "retained_names": [
+        "log_softmax",
+        "softmax",
+        "categorical_logp_entropy",
+        "PolicyNet",
+        "ValueNet",
+        "compute_gae",
+        "ppo_actor_loss_and_grad",
+        "value_loss_and_grad"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 32,
+      "title": "IPPO 的初始化、采样与更新",
+      "original_cell_sha256": "bff4c6803b3b847d140335cbac5859cafbc5e65bd02aadfb75c23e78a27cf1b4",
+      "retained_source_sha256": "f463720250e0cb263c4d7765a4c8812e17dc26ae3dcf2351e6b1f2493e008682",
+      "retained_names": [
+        "flatten_observations",
+        "is_time_limit_truncation",
+        "RolloutBuffer",
+        "make_ippo",
+        "collect_ippo",
+        "update_ippo"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 33,
+      "title": "显式调用的训练函数",
+      "original_cell_sha256": "74e9646794df3c7cb994f91e17825ecdb908b760ad6a1777b00e76c3f9e19b20",
+      "retained_source_sha256": "2b422f41e4093311b904d89b5b59d3eef477b91685471225c0093d261bee2048",
+      "retained_names": [
+        "train"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 34,
+      "title": "参数复制与 actor/critic 接口",
+      "original_cell_sha256": "eca7ba4be7d640330f89cf65ee4bc916a1afad51455bd58856980de20f8f061e",
+      "retained_source_sha256": "bb2c5504998c2da197d7535e0701ddb7ca749a78fca806ceeb0fee06c7922bb4",
+      "retained_names": [
+        "get_weights",
+        "validate_checkpoint_identity",
+        "copy_saved_parameters",
+        "set_weights",
+        "act_policy",
+        "value_of"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 35,
+      "title": "评估与指标汇总",
+      "original_cell_sha256": "73d2cbcc45f65845a555c006986ee3d384a2f85a24fabc54996f5b4da49141a3",
+      "retained_source_sha256": "746164f946f154d77638550a0fb334009ad6a3db5fcb12e43801284c477bb066",
+      "retained_names": [
+        "evaluate",
+        "summarize_eval"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 51,
+      "title": "共享 actor 与集中 critic 的 MAPPO",
+      "original_cell_sha256": "b6db34600621d0a1a9527b541b1e7c5cbdcc3a808372e0300555ff0931c19be3",
+      "retained_source_sha256": "f410842bb8e398db8a450e24702aeafca0d55b6ce3b0e1a75aa1190d956e0fa5",
+      "retained_names": [
+        "append_agent_id",
+        "append_agent_id_batch",
+        "agent_conditioned_global_states",
+        "make_mappo",
+        "collect_mappo",
+        "update_mappo"
+      ]
+    },
+    {
+      "source_cell_index_zero_based": 64,
+      "title": "RCR 与 JSD 指标",
+      "original_cell_sha256": "0c207a228d542bfc96ffc2120cea96febb6824021f3d4744c2c5a1d6ba505120",
+      "retained_source_sha256": "3cb23805c23bf4919795817fb10b6a2df1f8a736c9304e12be2eec4591c7b79b",
+      "retained_names": [
+        "global_rcr",
+        "rcr_map",
+        "agent_action_distributions",
+        "_kl_divergence",
+        "jsd",
+        "jsd_matrix"
+      ]
+    }
+  ],
+  "output_sha256": {
+    "code/marl_core.py": "3b81e9dedd55ad2fd2c5d4cf9ec646f02a209c0303e4f51f63c81abfce6bc62a",
+    "notebooks/marl_core.ipynb": "e1b0900049f137c81b0fc2181728c84666b4f3c5457f7d2c40710a63a93d45da"
+  }
+}

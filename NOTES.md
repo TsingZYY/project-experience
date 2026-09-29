@@ -13,6 +13,18 @@
 | Titanic | Pipeline、家庭隔离、特征实验、文档版本差异 | [实验笔记](projects/titanic/NOTES.md) |
 | RLVR | 机制假设、控制变量、前置条件、工程与科学证据 | [研究笔记](projects/rlvr-audit/NOTES.md) |
 
+## 课程项目笔记
+
+| 项目 | 笔记重点 | 阅读 |
+|---|---|---|
+| COMP9414 多智能体强化学习 | 环境与策略分离、IPPO/MAPPO、训练和评估条件、安全shield | [笔记](projects/comp9414-marl/NOTES.md) |
+| COMP9414 搜索与规划 | 搜索评价口径、启发式、状态与行动建模 | [笔记](projects/comp9414-search-planning/NOTES.md) |
+| COMP9820 TaskTracker | 后端分层、参数验证、SQL转义、排序与状态迁移 | [笔记](projects/comp9820-tasktracker/NOTES.md) |
+| COMP9311 数据库查询 | 表连接粒度、聚合边界、过程函数与无效输入 | [笔记](projects/comp9311-database/NOTES.md) |
+| COMP9021 文本差异分析器 | 差异命令、LCS、回溯枚举及复杂度 | [笔记](projects/comp9021-text-diff/NOTES.md) |
+| COMP9021 纸牌模拟器 | 状态转换、随机种子、频率统计和输出接口 | [笔记](projects/comp9021-card-simulation/NOTES.md) |
+| COMP9024 FlyNet 图算法 | 图表示、路径与连通性、内存生命周期 | [笔记](projects/comp9024-flynet/NOTES.md) |
+
 ## 横跨项目的三个方法问题
 
 ### 1. 一条记录不总是一个独立样本

@@ -67,3 +67,49 @@ Evidence reviewed on 30 September 2026. These entries describe separate projects
 
 **Scope:** Research engineering; zero of eight R13 scientific runs completed in the reviewed status snapshot.  
 [Case study](projects/rlvr-audit.md)
+
+## Multi-Agent Reinforcement Learning | COMP9414 | July–August 2026
+
+**Python, NumPy, IPPO, MAPPO, GAE, PPO**
+
+- Implemented a cooperative grid environment, joint-action handling and a safety shield, with NumPy neural networks, backpropagation, Adam and PPO updates.
+- Developed independent IPPO actors/critics and a MAPPO variant with a shared actor and centralized critic.
+- Documented saved in-setting evaluations and 400 episodes on unseen random layouts, separating cleaning performance, coordination measures and policy differences.
+
+**Scope:** Coursework with AI-assisted development and learning; one training seed per configuration. Published core definitions are an excerpt, have no pretrained weights and were not executed during this review.  
+[Case study](projects/comp9414-marl/README.md)
+
+## TaskTracker Backend and Team Integration | COMP9820 | March–April 2026
+
+**Python, Flask, SQLite, REST APIs, JavaScript**
+
+- Contributed backend implementation and frontend integration to a team task-management application, supported by individual Git commits.
+- Implemented validation, keyword-search escaping, server-side sorting, task statuses and compatible SQLite migrations; separated routes, services and database access.
+- Contributed iteration documentation and regression coverage, and mapped individual commits to a contribution timeline.
+
+**Scope:** Individual contributions within a team project. Course guidelines prohibit public code repositories, so source remains local. Historical test totals differ by version and were not rerun.  
+[Case study](projects/comp9820-tasktracker/README.md)
+
+## PostgreSQL Queries and Business Rules | COMP9311 | April 2026
+
+**PostgreSQL, SQL, PL/pgSQL, joins, aggregation**
+
+- Implemented six SQL views and four PL/pgSQL functions over an academic-records schema using joins, aggregation, correlated subqueries and procedural control flow.
+- Expressed program/term conditions, academic-status and weighted-average-mark rules, including input branches and formatted results.
+- Documented the query design and schema requirements alongside the student-authored SQL snapshot.
+
+**Scope:** Source snapshot only; the public package excludes university data and checking scripts. No saved passing report or course grade is claimed.  
+[Case study](projects/comp9311-database/README.md)
+
+## Text Difference Analyzer | COMP9021 | April 2026
+
+**Python, dynamic programming, LCS, memoized backtracking**
+
+- Implemented difference-command parsing, exception handling and consistency checks against file contents.
+- Used LCS dynamic programming and memoized backtracking to enumerate optimal difference descriptions and render changed and unchanged sections.
+- Documented O(mn) matrix costs and the additional combinatorial cost of enumerating all optimal descriptions.
+
+**Scope:** Standard-library source and recorded debugging discussion; no new execution or verified course grade.  
+[Case study](projects/comp9021-text-diff/README.md)
+
+Further coursework, including card simulation, search/planning and graph algorithms, is indexed in the [coursework collection](COURSEWORK.md).

@@ -1,4 +1,4 @@
-# 最终反思：六个项目留下的经验
+# 最终反思：项目与课程实践留下的经验
 
 [返回作品集](README.md)
 
@@ -35,6 +35,20 @@ Algothon与Kaggriculture的源码／打包一致性有具体记录；本次整�
 | Kaggriculture | 同seed仍可能有内生路径差异；总胜率可能掩盖基线同样强 | [反思](projects/kaggriculture/REFLECTION.md) |
 | Titanic | 数据依赖关系影响验证；文档一致性也是复现工作的一部分 | [反思](projects/titanic/REFLECTION.md) |
 | RLVR | 提前否决无效机制有价值；工程canary不是科学结论 | [反思](projects/rlvr-audit/REFLECTION.md) |
+
+## 课程项目复盘
+
+| 项目 | 主要反思 | 完整复盘 |
+|---|---|---|
+| COMP9414 多智能体强化学习 | 训练场景成绩不能替代未见地图泛化；安全结果依赖shield | [反思](projects/comp9414-marl/REFLECTION.md) |
+| COMP9414 搜索与规划 | 路径正确、代价最优和搜索效率是不同问题 | [反思](projects/comp9414-search-planning/REFLECTION.md) |
+| COMP9820 TaskTracker | 把个人贡献、团队产物与不同版本的质量记录分开 | [反思](projects/comp9820-tasktracker/REFLECTION.md) |
+| COMP9311 数据库查询 | 业务规则先确定粒度与边界；源码存在不等于查询已验证 | [反思](projects/comp9311-database/REFLECTION.md) |
+| COMP9021 文本差异分析器 | LCS求解和枚举全部最优差异的成本不同 | [反思](projects/comp9021-text-diff/REFLECTION.md) |
+| COMP9021 纸牌模拟器 | 可复现种子与模拟频率不等于理论概率 | [反思](projects/comp9021-card-simulation/REFLECTION.md) |
+| COMP9024 FlyNet 图算法 | 复杂度取决于实际图表示；回顾记录不能替代开发历史 | [反思](projects/comp9024-flynet/REFLECTION.md) |
+
+课程项目补充了从算法到应用的实现经历。复盘时应把算法定义、代码实现、运行输出和外部评分逐层区分；团队项目还需将可追查的个人改动与共同成果区分。整理出的笔记是基于现存材料的回顾，不替代当时的原始记录。
 
 ## 后续推进顺序
 

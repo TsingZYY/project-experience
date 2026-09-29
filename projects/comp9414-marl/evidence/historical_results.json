@@ -1,0 +1,104 @@
+{
+  "record_type": "transcribed_historical_outputs_not_rerun",
+  "prepared_on": "2026-09-30",
+  "source_notebook_sha256": "bf52eb1d4b43bed4dee7ef5f8321a38a7794442188d128220c04c3aa35f4f9ed",
+  "sources": [
+    "historical project README metrics table",
+    "stored notebook outputs cells 23, 46, 68 and discussion cell 77"
+  ],
+  "training": {
+    "seed": 0,
+    "updates_per_setting": 400,
+    "rollout_steps": 512,
+    "robots": 3,
+    "grid": [
+      12,
+      12
+    ],
+    "horizon": 50
+  },
+  "scope": "Single training seed per setting; stored observations, not new verification. Zero executed collisions are under the safety shield. JSD is a policy-output diversity proxy.",
+  "finite_difference_record": {
+    "actor_max_absolute_error": 1.75e-11,
+    "critic_max_absolute_error": 8.55e-10,
+    "historical_threshold": 1e-06
+  },
+  "task34_evaluation_episodes_per_setting": 300,
+  "task34": [
+    {
+      "algorithm": "IPPO",
+      "training_layout": "fixed",
+      "team_return": 273.33,
+      "weighted_clean_percent": 99.79,
+      "full_solve_percent": 97.0,
+      "executed_violation": 0,
+      "shield_intervention_percent": 2.77
+    },
+    {
+      "algorithm": "IPPO",
+      "training_layout": "random",
+      "team_return": 216.14,
+      "weighted_clean_percent": 84.03,
+      "full_solve_percent": 7.0,
+      "executed_violation": 0,
+      "shield_intervention_percent": 6.39
+    },
+    {
+      "algorithm": "MAPPO",
+      "training_layout": "fixed",
+      "team_return": 246.34,
+      "weighted_clean_percent": 97.25,
+      "full_solve_percent": 78.67,
+      "executed_violation": 0,
+      "shield_intervention_percent": 5.09
+    },
+    {
+      "algorithm": "MAPPO",
+      "training_layout": "random",
+      "team_return": 142.62,
+      "weighted_clean_percent": 64.85,
+      "full_solve_percent": 0.33,
+      "executed_violation": 0,
+      "shield_intervention_percent": 9.72
+    }
+  ],
+  "task5": {
+    "episodes_per_setting": 400,
+    "layout": "unseen random layouts",
+    "matched_observations_for_jsd": 1500,
+    "rows": [
+      {
+        "algorithm": "IPPO",
+        "training_layout": "fixed",
+        "weighted_clean_percent": 81.57,
+        "full_solve_percent": 3.5,
+        "global_rcr": 0.184,
+        "mean_pairwise_jsd_base2": 0.633
+      },
+      {
+        "algorithm": "IPPO",
+        "training_layout": "random",
+        "weighted_clean_percent": 84.9,
+        "full_solve_percent": 8.25,
+        "global_rcr": 0.186,
+        "mean_pairwise_jsd_base2": 0.557
+      },
+      {
+        "algorithm": "MAPPO",
+        "training_layout": "fixed",
+        "weighted_clean_percent": 76.54,
+        "full_solve_percent": 1.25,
+        "global_rcr": 0.245,
+        "mean_pairwise_jsd_base2": 0.021
+      },
+      {
+        "algorithm": "MAPPO",
+        "training_layout": "random",
+        "weighted_clean_percent": 67.29,
+        "full_solve_percent": 0.25,
+        "global_rcr": 0.304,
+        "mean_pairwise_jsd_base2": 0.014
+      }
+    ]
+  }
+}
